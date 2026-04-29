@@ -11,7 +11,7 @@ let jogos = carregarJogos();
 
 function jogoJaExiste(nome) {
     for (let i = 0; i < jogos.length; i++) {
-        if (jogos[i].nome.toLowerCase() === nome.toLowerCase()) {
+        if (jogos[i].nome.toLowerCase().trim() === nome.toLowerCase().trim()) {
             return true;
         }
     }
