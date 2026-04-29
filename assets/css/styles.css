@@ -115,12 +115,13 @@ button:active {
 }
 
 
-.mensagem {
+#mensagem {
   font-size: 13px;
   font-weight: 500;
   color: #ef4444;
   min-height: 18px;
   margin-top: 6px;
+
 }
 
 

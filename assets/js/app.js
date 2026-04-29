@@ -61,7 +61,7 @@ function mostrarSugestoes(lista) {
 
 function adicionarJogoDireto(jogo) {
     if (jogoJaExiste(jogo.nome) === true) {
-        mensagem.innerText = "Esse jogo já está na lista.";
+        mensagem.innerText = "Esse jogo já está na lista!";
         return;
     }
 
@@ -81,12 +81,12 @@ function adicionarJogo() {
     const nome = inputJogo.value.trim();
 
     if (nome === "") {
-        mensagem.innerText = "Digite um nome.";
+        mensagem.innerText = "Digite o nome do jogo!";
         return;
     }
 
     if (jogoJaExiste(nome) === true) {
-        mensagem.innerText = "Esse jogo já está na lista.";
+        mensagem.innerText = "Esse jogo já está na lista!";
         return;
     }
 
@@ -109,7 +109,7 @@ function adicionarJogo() {
 
 function removerTodos() {
     if (jogos.length === 0) {
-        mensagem.innerText = "Não há jogos.";
+        mensagem.innerText = "Não há jogos para remover!";
         return;
     }
 
