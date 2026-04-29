@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>GAMELOG - Backlog de Jogos</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+  <img src="assets/img/logo.png" alt="Logo do GameLog" class="logo" />
+  <h2>Meu Backlog de Jogos</h2>
+
+
+  <div class="form">
+    <input type="text" id="inputJogo" placeholder="Buscar jogo..." />
+    <select id="selectPlataforma">
+      <option value="PC">PC</option>
+      <option value="PS">PlayStation</option>
+      <option value="Xbox">Xbox</option>
+      <option value="Switch">Nintendo Switch</option>
+      <option value="Mobile">Mobile</option>
+    </select>
+    <button id="btnAdicionar">Adicionar</button>
+
+    <ul id="sugestoes"></ul>
+
+  </div>
+
+
+  <p id="mensagem"></p>
+
+  <label>
+    <input type="checkbox" id="filtroZerados" />
+    Mostrar zerados
+  </label>
+
+  <p>Total: <span id="contadorJogos">0</span></p>
+
+  <ul id="listaJogos"></ul>
+
+  <button id="btnRemoverTodos">Remover todos</button>
+</div>
+
+<script src="assets/js/storage.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/gamesApi.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
